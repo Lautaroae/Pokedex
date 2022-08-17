@@ -1,0 +1,27 @@
+.searchbar-container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+}
+.searchbar {
+  background: #fff;
+  margin-right: 20px;
+}
+.searchbar input {
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.searchbar input:focus {
+  outline: none;
+}
+.searchbar-btn button {
+  background-color: #363636;
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+  color: #fff;
+  padding: 10px 12px;
+}
