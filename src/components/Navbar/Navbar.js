@@ -1,7 +1,11 @@
 import React from "react";
+import FavoriteContext from "../../context/favoriteContext";
 import "./Navbar.css";
 
+const { useContext } = React;
+
 const Navbar = () => {
+  const { favoritePokemon } = useContext(FavoriteContext);
   return (
     <>
       <nav>
@@ -12,7 +16,7 @@ const Navbar = () => {
             className="navbar-img"
           />
         </div>
-        <div>❤️</div>
+        <div>❤️{favoritePokemon.length}</div>
       </nav>
     </>
   );
