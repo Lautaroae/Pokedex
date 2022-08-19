@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowAltCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import "./Pokedex.css";
 
 const Pagination = (props) => {
@@ -7,11 +8,11 @@ const Pagination = (props) => {
   return (
     <>
       <div className="pagination">
-        <button onClick={onLeftClick}>👈</button>
+        <FaArrowAltCircleLeft className="left-arrow" onClick={onLeftClick} />
         <div>
           {page} de {totalPages}
         </div>
-        <button onClick={onRightClick}>👉</button>
+        <FaArrowCircleRight className="right-arrow" onClick={onRightClick} />
       </div>
     </>
   );

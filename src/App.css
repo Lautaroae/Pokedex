@@ -4,6 +4,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
+  background: #000;
+  color: #fff;
 }
 .not-found-text {
   text-align: center;
