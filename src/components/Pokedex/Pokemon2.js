@@ -26,9 +26,12 @@ const Pokemon2 = (props) => {
           <div className="face back">
             <h3>Tipo:</h3>
             {pokemon.types.map((type, idx) => {
-              return <h3 key={idx}> {type.type.name}</h3>;
+              return <p key={idx}> {type.type.name}</p>;
             })}
-            {/* <p>Ataque: {pokemon.moves}</p> */}
+            <h3>Ataques:</h3>
+            {pokemon.abilities.map((abi, idx) => {
+              return <p key={idx}> {abi.ability.name}</p>;
+            })}
             <button className="button" onClick={clickHeart}>
               {heart}
             </button>

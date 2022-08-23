@@ -97,6 +97,7 @@
 
 .card .back p {
   letter-spacing: 1px;
+  background-color: rgb(3, 35, 54);
 }
 
 .card:hover .front {
